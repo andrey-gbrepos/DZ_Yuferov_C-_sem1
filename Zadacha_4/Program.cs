@@ -41,12 +41,13 @@ if (number < 0)
         sign = sign*-1;
     }
 
-//На случай ввода -1, 0, 1
-if (number >= -1 && number <=1 )
+//На случай ввода -1, 1
+if (number == -1 || number ==1 )
 {
-    Console.Write("В этом диапазоне нет четных чисел ");
+    Console.Write($"Четные значения дипазона: {0}");
     return;
 } 
+Console.Write($"Четные значения диапазона: ");
 
 while (count <= Math.Abs(number))
 {
